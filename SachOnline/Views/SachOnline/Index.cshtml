@@ -1,0 +1,159 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<style>
+    .text-center .pagination {
+        display: flex;
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        background-color: #333; /* Màu nền của thẻ nav */
+        color: #fff; /* Màu văn bản bên trong thẻ nav */
+        padding: 10px 0; /* Khoảng cách bên trong thẻ nav */
+    }
+    .pagination ul {
+        list-style: none; /* Loại bỏ dấu đầu dòng của danh sách */
+        padding: 0;
+    }
+
+    .pagination li {
+        display: inline; /* Hiển thị các mục danh sách trên cùng một hàng */
+        margin: 0 10px; /* Khoảng cách giữa các mục danh sách */
+    }
+    .pagination a {
+        text-decoration: none; /* Loại bỏ đường gạch chân cho liên kết */
+        color: mintcream; /* Màu văn bản của liên kết */
+    }
+    hr{
+        width :1050px;
+    }
+</style>
+
+<div class="left">
+    <h2 class="text-center">SÁCH MỚI</h2>
+    <hr >
+    <div class="row text-center">
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+            <div class="thumbnail">
+                <img src="~/Images/a_1974173257_dacnhantam1 (1).jpg" alt="Thumbnail Image 1"
+                     class="img-responsive img-rounded imgbook ">
+                <div class="caption">
+                    <h3>BOOK</h3>
+                    <p>Mô tả tóm tắt sản phẩm</p>
+                    <p>
+                        <a href="#" class="btn btn-warning" role="button">
+                            <span class="glyphicon
+glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+            <div class="thumbnail">
+                <img src="~/Images/a_1974173257_dacnhantam1 (1).jpg" alt="Thumbnail Image 1"
+                     class="img-responsive img-rounded imgbook">
+                <div class="caption">
+                    <h3>COMIC </h3>
+                    <p>Mô tả tóm tắt sản phẩm</p>
+                    <p>
+                        <a href="#" class="btn btn-danger" role="button">
+                            <span class="glyphicon
+glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 hidden-xs">
+            <div class="thumbnail">
+                <img src="~/Images/a_1974173257_dacnhantam1 (1).jpg" alt="Thumbnail Image 1"
+                     class="img-responsive img-rounded imgbook">
+                <div class="caption">
+                    <h3>PRODUCT </h3>
+                    <p>Mô tả tóm tắt sản phẩm</p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">
+                            <span class="glyphicon
+glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+            <div class="thumbnail">
+                <img src="~/Images/a_1974173257_dacnhantam1 (1).jpg" alt="Thumbnail Image 1"
+                     class="img-responsive img-rounded imgbook">
+                <div class="caption">
+                    <h3>SQL</h3>
+                    <p>Mô tả tóm tắt sản phẩm</p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">
+                            <span class="glyphicon
+glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6">
+            <div class="thumbnail">
+                <img src="~/Images/a_1974173257_dacnhantam1 (1).jpg" alt="Thumbnail Image 1"
+                     class="img-responsive img-rounded imgbook">
+                <div class="caption">
+                    <h3>LYRICAL </h3>
+                    <p>Mô tả tóm tắt sản phẩm</p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">
+                            <span class="glyphicon
+glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 hidden-xs">
+            <div class="thumbnail">
+                <img src="~/Images/a_1974173257_dacnhantam1 (1).jpg" alt="Thumbnail Image 1"
+                     class="img-responsive img-rounded imgbook">
+                <div class="caption">
+                    <h3>COOK </h3>
+                    <p>Mô tả tóm tắt sản phẩm</p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button">
+                            <span class="glyphicon
+glyphicon-shopping-cart" aria-hidden="true"></span> Add to Cart
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="text-center">
+        <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
+        <ul class="pagination">
+
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-
+                          hidden="true">&laquo;</span>
+                </a>
+            </li>
+
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li class="disabled"><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+
